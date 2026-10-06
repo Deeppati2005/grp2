@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Dashboard | Resolver360</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+  </head>
+  <body>
+    <aside id="sidebar" class="sidebar">
+      <div class="side-brand">
+        <a class="brand" href="index.html"><span>Resolver</span><b>360</b></a>
+      </div>
+      <div class="user-mini">
+        <div class="avatar" id="userAvatar">U</div>
+        <div>
+          <b data-user-name>User</b><small data-user-role>Employee</small>
+        </div>
+      </div>
+      <nav id="sideNav"></nav>
+      <button class="logout" id="logoutBtn">↪ <span>Logout</span></button>
+    </aside>
+    <header class="topbar">
+      <button id="menuButton" class="icon-btn">☰</button>
+      <div>
+        <h1 id="dashboardTitle">Dashboard</h1>
+        <p id="dashboardSubtitle">Workplace resolution overview</p>
+      </div>
+      <div class="top-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle theme">
+          ☾
+        </button>
+      </div>
+    </header>
+    <main class="main" id="mainContent"></main>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

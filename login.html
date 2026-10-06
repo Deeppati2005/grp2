@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Login | Resolver360</title>
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <a class="brand" href="index.html"><span>Resolver</span><b>360</b></a>
+      <div class="auth-card">
+        <div class="auth-head">
+          <span class="eyebrow">WELCOME BACK</span>
+          <h1>Sign in to Resolver360</h1>
+          <p>Access your role-specific workplace resolution dashboard.</p>
+        </div>
+        <form id="loginForm">
+          <label
+            >Email<input
+              id="loginEmail"
+              type="email"
+              placeholder="you@resolver360.com"
+              required /></label
+          ><label
+            >Password
+            <div class="password-wrap">
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter password"
+                required
+              /><button type="button" data-password-toggle="loginPassword">
+                Show
+              </button>
+            </div></label
+          >
+          <div class="form-row">
+            <label class="check"
+              ><input id="rememberMe" type="checkbox" /> Remember me</label
+            ><a id="forgotPasswordLink" href="forgot-password.html"
+              >Forgot password?</a
+            >
+          </div>
+          <div id="loginMessage" class="auth-message"></div>
+          <button class="btn-primary" type="submit">Login</button>
+        </form>
+        <p class="switch">
+          Don't have an account? <a href="signup.html">Create account</a>
+        </p>
+        <div class="demo">
+          <b>Demo accounts</b
+          ><small>Employee: soham@resolver360.com / Soham@123</small
+          ><small>HR: priya@resolver360.com / Priya@123</small
+          ><small>Admin: amit@resolver360.com / Amit@123</small>
+        </div>
+      </div>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

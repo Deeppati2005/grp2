@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Sign Up | Resolver360</title>
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <a class="brand" href="index.html"><span>Resolver</span><b>360</b></a>
+      <div class="auth-card wide">
+        <div class="auth-head">
+          <span class="eyebrow">NEW ACCOUNT</span>
+          <h1>Create your Resolver360 account</h1>
+          <p>Set up your profile and security question.</p>
+        </div>
+        <form id="signupForm" class="form-grid">
+          <label>Full Name<input id="signupName" required /></label
+          ><label>Email<input id="signupEmail" type="email" required /></label
+          ><label>Employee ID<input id="employeeId" required /></label
+          ><label
+            >Role<select id="signupRole" required>
+              <option value="">Select role</option>
+              <option>Employee</option>
+              <option>HR</option>
+              <option>Admin</option>
+            </select></label
+          ><label
+            >Password<input
+              id="signupPassword"
+              type="password"
+              required /></label
+          ><label
+            >Confirm Password<input
+              id="confirmPassword"
+              type="password"
+              required /></label
+          ><label class="full"
+            >Security Question<select
+              id="securityQuestion"
+              required
+            ></select></label
+          ><label class="full"
+            >Security Answer<input id="securityAnswer" required
+          /></label>
+          <div id="signupMessage" class="auth-message full"></div>
+          <button class="btn-primary full" type="submit">Create Account</button>
+        </form>
+        <p class="switch">
+          Already have an account? <a href="login.html">Login</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
